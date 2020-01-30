@@ -3,8 +3,6 @@ Time-series dynamic clustering algorithm
 
 Algorithm steps:
 
-Magma: dynamic cluster tracking algorithm
-
 1. From the primary data frame, get block of observations with only the columns needed for clustering  covering the time window. 
 2. Perform clustering on this block of observations. Mark the observations with the current time block ID. Specify max clusters and consistently apply throughout. Store the assigned cluster number for each observation. 
 3. For each cluster in the time block, store the mean values for each column along with the time block ID and the cluster number. If necessary, create another data frame with the same columns but store the standard deviations instead. 
